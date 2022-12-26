@@ -15,6 +15,9 @@ jobs:
       && !startsWith(github.event.head_commit.message, 'style:')
       && !startsWith(github.event.head_commit.message, 'style(')      
     runs-on: ubuntu-latest
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true    
     steps:
       - name: 🎟 Checkout Git Repository
         id: checkout_repository_step
