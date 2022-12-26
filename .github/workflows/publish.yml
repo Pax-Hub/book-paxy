@@ -1,0 +1,78 @@
+on:
+  workflow_dispatch:
+  workflow_call:
+  push:
+    branches: [ main ]
+
+name: Publish
+
+jobs:
+  build:
+    name: 🛠 Build
+    if: |
+      !startsWith(github.event.head_commit.message, 'ci:')
+      && !startsWith(github.event.head_commit.message, 'ci(')
+      && !startsWith(github.event.head_commit.message, 'style:')
+      && !startsWith(github.event.head_commit.message, 'style(')      
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🎟 Checkout Git Repository
+        id: checkout_repository_step
+        uses: actions/checkout@v2
+      - name: 🧰 Install Rust Toolchain
+        id: install_toolchain_step
+        uses: actions-rs/toolchain@v1
+        with:
+          profile: minimal
+          toolchain: stable
+          override: true          
+      - name: 🗂 Set up cargo cache
+        id: setup_cache_step
+        uses: actions/cache@v3
+        continue-on-error: false
+        with:
+          path: |
+            ~/.cargo/bin/
+            ~/.cargo/registry/index/
+            ~/.cargo/registry/cache/
+            ~/.cargo/git/db/
+            target/            
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+          restore-keys: ${{ runner.os }}-cargo-
+      - name: 💿 Install mdbook
+        id: install_mdbook_step        
+        uses: actions-rs/cargo@v1
+        with:          
+          command: install
+          args: mdbook
+      - name: 🛠 Build Book
+        id: build_book_step
+        run: mdbook build
+      - name: ⬆ Upload Book Artifact
+        id: upload_book_step        
+        uses: actions/upload-pages-artifact@v1
+        with: 
+          path: book
+  deploy:
+    name: ✈ Deploy
+    if: |
+      !startsWith(github.event.head_commit.message, 'ci:')
+      && !startsWith(github.event.head_commit.message, 'ci(')
+      && !startsWith(github.event.head_commit.message, 'style:')
+      && !startsWith(github.event.head_commit.message, 'style(')      
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write      # to deploy to Pages
+      id-token: write   # to verify the deployment originates from an appropriate source
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment_step.outputs.page_url }}      
+    steps:
+      - name: ✈ Deploy to GitHub Pages
+        id: deployment_step
+        uses: actions/deploy-pages@v1
+          

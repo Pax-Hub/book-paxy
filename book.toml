@@ -1,0 +1,11 @@
+[book]
+authors = [
+    "shivanandvp",
+    "lylythechosenone",
+    "flyingcakes85",
+    "mkuja"
+]
+language = "en"
+multilingual = false
+src = "src"
+title = "The Paxy Book"
