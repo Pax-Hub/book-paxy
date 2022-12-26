@@ -17,7 +17,7 @@ For example, consider the `rust` package. It downloads `rustup`, then uses `rust
 Package versions should correspond to versions of the actual software. For example, version 3.6 of `python` should install python 3.6. Package maintainers should make an effort to provide all versions of a package (automatic deployment of non-breaking versions is recommended).
 
 ## Package Flavors
-Package flavors are often provided in the form of a specific architecture. For example, `rust` uses metadata for the target triple. A package should provide metadata for anything that seems relevant. In other cases, package flavors specify the origin of the package. For example, `jdk` provides `openjdk` and `oracle`.
+Package flavors are often provided in the form of a specific architecture. For example, `rust` uses flavors for the target triple. A package should provide flavors for anything that seems relevant. In other cases, package flavors specify the origin of the package. For example, `jdk` provides flavors `openjdk` and `oracle`.
 
 ## Package Names
 A package name should reflect what's inside the package. If the package provides a single executable, it should be named for that executable. Otherwise, if a package provides a collection of software, like `gcc`, it should be named after the cannonical name for that software. In addition, if there are multiple sources for said software, like Java JDKs, they should be specified in the package flavors.
