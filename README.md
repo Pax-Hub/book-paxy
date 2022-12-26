@@ -1,4 +1,4 @@
-# The Paxy Book - *Your guide to everything paxy*
+# [**The Paxy Book**](https://paxyhub.github.io/paxy-book/) - *Your guide to everything paxy*
 
 [![Discord Server](https://dcbadge.vercel.app/api/server/heVuWyRxn2?style=flat)](https://discord.gg/heVuWyRxn2)
 [![GitHub License](https://img.shields.io/github/license/paxyhub/paxy-book)](https://www.mozilla.org/en-US/MPL/)
@@ -6,7 +6,7 @@
 
 ## Table of Contents
 
-- [The Paxy Book - *Your guide to everything paxy*](#the-paxy-book---your-guide-to-everything-paxy)
+- [**The Paxy Book** - *Your guide to everything paxy*](#the-paxy-book---your-guide-to-everything-paxy)
   - [Table of Contents](#table-of-contents)
   - [For Users](#for-users)
   - [For Developers](#for-developers)
@@ -17,7 +17,7 @@
 
 ## For Users
 
-Please visit read the book at https://paxyhub.github.io/paxy-book/
+Please visit read the book at https://paxyhub.github.io/paxy-book
 
 ## For Developers
 
