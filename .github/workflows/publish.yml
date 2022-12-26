@@ -4,7 +4,7 @@ on:
   push:
     branches: [ main ]
 
-name: Publish
+name: 🌎 Publish
 
 jobs:
   build:
