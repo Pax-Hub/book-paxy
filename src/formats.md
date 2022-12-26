@@ -80,6 +80,13 @@ The default format for manifests is toml. This is the format used in the example
         "steps": ["step1", "step2", "step3"],
         "artifacts": ["path/to/artifact1", "path/to/artifact2"]
     }
+    "dependencies": {
+        "dependency1": "1.0.0",
+        "dependency2": {
+            "version": "1.0.0",
+            "flavor": "flavor"
+        }
+    }
 }
 ```
 
@@ -151,4 +158,9 @@ install:
     artifacts:
         - path/to/artifact1
         - path/to/artifact2
+dependencies:
+    dependency1: 1.0.0
+    dependency2:
+        version: 1.0.0
+        flavor: flavor
 ```

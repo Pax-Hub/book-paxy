@@ -97,10 +97,20 @@ command = "command"
 [install]
 steps = ["step1", "step2", "step3"]
 artifacts = ["path/to/artifact1", "path/to/artifact2"]
+
+[dependencies]
+dependency1 = "1.0.0"
+dependency2 = {
+    version = "1.0.0",
+    flavor = "flavor"
+}
 ```
 
 ### `version`
 All of the fields under `version` need only be specified if they different from the prior manifests.
+
+### `dependencies`
+The `dependencies` table lists all dependencies that are required for this version of the flavor. Each entry should point to either a version or a table with `version` and `flavor` fields.
 
 ## `install`
 ### `steps`
