@@ -20,4 +20,4 @@
 
 ### Automatic correction
 For all commands, `paxy` will automatically correct typos and abbreviations. For example, imagine a scenario where `bash` isn't installed, but `sh` is. `paxy remove bash` will provide you with a prompt: "Did you mean 'sh'? [Y/n]". If you answer "Y", `paxy` will remove `sh` instead.
-> :warning: Please don't remove sh. That is a horrible idea.
+> Warning: please don't remove sh. That is a horrible idea.
