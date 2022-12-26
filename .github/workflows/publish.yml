@@ -44,10 +44,8 @@ jobs:
           restore-keys: ${{ runner.os }}-cargo-
       - name: 💿 Install mdbook
         id: install_mdbook_step        
-        uses: actions-rs/cargo@v1
-        with:          
-          command: install
-          args: mdbook
+        run: |
+          cargo install --locked mdbook || true
       - name: 🛠 Build Book
         id: build_book_step
         run: mdbook build
