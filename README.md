@@ -1,6 +1,6 @@
 # [**The Paxy Book**](https://paxyhub.github.io/paxy-book/) - *Your guide to everything paxy*
 
-[![Discord Server](https://dcbadge.vercel.app/api/server/heVuWyRxn2?style=flat)](https://discord.gg/heVuWyRxn2)
+[![Discord Server](https://dcbadge.vercel.app/api/server/vFG57wDxsd?style=flat)](https://discord.gg/vFG57wDxsd)
 [![GitHub License](https://img.shields.io/github/license/paxyhub/paxy-book)](https://www.mozilla.org/en-US/MPL/)
 [![Publish](https://github.com/PaxyHub/paxy-book/actions/workflows/publish.yml/badge.svg)](https://github.com/PaxyHub/paxy-book/actions/workflows/publish.yml)
 
