@@ -1,8 +1,8 @@
-# [**The Paxy Book**](https://paxyhub.github.io/paxy-book/) - *Your guide to everything paxy*
+# [**The Paxy Book**](https://pax-hub.github.io/paxy-book/) - *Your guide to everything paxy*
 
 [![Discord Server](https://dcbadge.vercel.app/api/server/vFG57wDxsd?style=flat)](https://discord.gg/vFG57wDxsd)
-[![GitHub License](https://img.shields.io/github/license/paxyhub/paxy-book)](https://www.mozilla.org/en-US/MPL/)
-[![Publish](https://github.com/PaxyHub/paxy-book/actions/workflows/publish.yml/badge.svg)](https://github.com/PaxyHub/paxy-book/actions/workflows/publish.yml)
+[![GitHub License](https://img.shields.io/github/license/pax-hub/paxy-book)](https://www.mozilla.org/en-US/MPL/)
+[![Publish](https://github.com/pax-hub/paxy-book/actions/workflows/publish.yml/badge.svg)](https://github.com/pax-hub/paxy-book/actions/workflows/publish.yml)
 
 ## Table of Contents
 
@@ -17,7 +17,7 @@
 
 ## For Users
 
-Please visit read the book at https://paxyhub.github.io/paxy-book
+Please visit read the book at https://pax-hub.github.io/paxy-book
 
 ## For Developers
 
@@ -30,7 +30,7 @@ In order to download the source code to your local computer for testing, or for 
 #### HTTPS
 
 ```sh
-git clone https://github.com/PaxyHub/paxy-book.git 
+git clone https://github.com/pax-hub/paxy-book.git 
 ```
 
 OR
@@ -38,7 +38,7 @@ OR
 #### SSH
 
 ```sh
-git clone git@github.com:PaxyHub/paxy-book.git
+git clone git@github.com:pax-hub/paxy-book.git
 ```
 
 ### Continuous Integration (CI)
