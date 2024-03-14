@@ -1,4 +1,4 @@
-# [**The Paxy Book**](https://pax-hub.github.io/paxy-book/) - *Your guide to everything paxy*
+# [**The Paxy Book**](https://pax-hub.github.io/book-paxy/) - *Your guide to everything paxy*
 
 [![Discord Server](https://dcbadge.vercel.app/api/server/vFG57wDxsd?style=flat)](https://discord.gg/vFG57wDxsd)
 [![GitHub License](https://img.shields.io/github/license/pax-hub/book-paxy)](https://www.mozilla.org/en-US/MPL/)
